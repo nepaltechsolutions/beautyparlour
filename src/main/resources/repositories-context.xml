@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/data/jpa 
+    http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd">
+	<!-- Configure the data source bean -->
+	<!-- <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" 
+		destroy-method="close"> -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<!-- 		<property name="driverClassName" -->
+<!-- 			value="com.mysql.jdbc.Driver" /> -->
+		<property name="driverClassName"
+			value="com.mysql.cj.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12254476?autoReconnect=true&amp;useSSL=false" />
+		<property name="username" value="sql12254476" />
+		<property name="password" value="d9eMIw3tyE" />
+		<!-- <property name="useSSL" value="false" /> -->
+		<!-- <property name="autoReconnect" value="true" /> -->
+		<!-- <property name="driverClass" value="com.mysql.jdbc.Driver"/> -->
+		<!-- <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/springboot"/> -->
+		<!-- <property name="user" value="root"/> -->
+		<!-- <property name="password" value="123456"/> -->
+		<!-- <property name="minPoolSize" value="10"/> -->
+		<!-- <property name="maxPoolSize" value="100"/> -->
+		<!-- <property name="maxStatementsPerConnection" value="15"/> -->
+		<!-- <property name="idleConnectionTestPeriod" value="3000"/> -->
+		<!-- <property name="acquireIncrement" value="1" /> -->
+		<!-- <property name="acquireRetryAttempts" value="3"/> -->
+		<!-- <property name="acquireRetryDelay" value="300" /> -->
+		<!-- <property name="initialPoolSize" value="3" /> -->
+	</bean>
+	<bean id="jdbcTemplate"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<!-- Configure the entity manager factory bean -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="jpaVendorAdapter">
+			<bean
+				class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+		</property>
+		<property name="jpaProperties">
+			<props>
+				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="javax.persistence.schema-generation.database.action">none</prop>
+				<prop key="hibernate.ejb.use_class_enhancer">true</prop>
+			</props>
+		</property>
+		<property name="packagesToScan" value="com.spring.entity" />
+		<!-- Set share cache mode -->
+		<property name="sharedCacheMode" value="ENABLE_SELECTIVE" />
+		<!-- Set validation mode -->
+		<property name="validationMode" value="NONE" />
+		<!-- <property name="persistenceUnitName" value="spring" /> -->
+	</bean>
+
+	<bean
+		class="org.springframework.orm.hibernate5.HibernateExceptionTranslator" />
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory"
+			ref="entityManagerFactory"></property>
+	</bean>
+
+<!-- 	<tx:annotation-driven -->
+<!-- 		transaction-manager="transactionManager" /> -->
+
+	<bean
+		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+
+
+	<jpa:repositories
+		base-package="com.spring.repositories" />
+
+	<!-- <bean id="facebook" factory-method="ﬁndPrimaryConnection" -->
+	<!-- factory-bean="connectionRepository" scope="request" -->
+	<!-- depends-on="connectionRepository"> -->
+	<!-- <constructor-arg -->
+	<!-- value="org.springframework.social.facebook.api.Facebook" /> -->
+	<!-- </bean> -->
+
+<!-- 	<bean -->
+<!-- 		class="org.springframework.social.connect.web.ConnectController"> -->
+<!-- 		<property name="applicationUrl" -->
+<!-- 			value="/connect/facebookConnect" /> -->
+<!-- 	</bean> -->
+
+</beans>

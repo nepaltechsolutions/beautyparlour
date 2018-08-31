@@ -1,0 +1,426 @@
+2018-08-31_17:14:40.258 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 19140 (C:\Users\dell\Documents\workspace-sts-3.9.5.RELEASE\BeautySpringParlour\target\classes started by dell in C:\Users\dell\Documents\workspace-sts-3.9.5.RELEASE\BeautySpringParlour)
+2018-08-31_17:14:40.263 [restartedMain] DEBUG com.spring.DemoApplication -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:14:40.277 [restartedMain] INFO  com.spring.DemoApplication -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:14:56.372 [localhost-startStop-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper -
+				Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+2018-08-31_17:14:56.383 [localhost-startStop-1] ERROR o.s.b.w.e.tomcat.TomcatStarter -
+				Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'org.springframework.security.filterChainProxy': Cannot resolve reference to bean 'org.springframework.security.filterChains' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChains': Cannot resolve reference to bean 'org.springframework.security.web.DefaultSecurityFilterChain#19' while setting bean property 'sourceList' with key [19]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#19': Cannot resolve reference to bean 'customSessionFilter' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customSessionFilter' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionRegistry' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionRegistry' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionApi' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionApi' defined in class path resource [api-context.xml]: Cannot resolve reference to bean 'userSessionRepository' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2018-08-31_17:14:56.454 [restartedMain] ERROR o.s.boot.SpringApplication -
+				Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.spring.DemoApplication.main(DemoApplication.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:417)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:176)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChainProxy': Cannot resolve reference to bean 'org.springframework.security.filterChains' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChains': Cannot resolve reference to bean 'org.springframework.security.web.DefaultSecurityFilterChain#19' while setting bean property 'sourceList' with key [19]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#19': Cannot resolve reference to bean 'customSessionFilter' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customSessionFilter' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionRegistry' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionRegistry' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionApi' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionApi' defined in class path resource [api-context.xml]: Cannot resolve reference to bean 'userSessionRepository' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:80)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:250)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:237)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5204)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1409)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.filterChains': Cannot resolve reference to bean 'org.springframework.security.web.DefaultSecurityFilterChain#19' while setting bean property 'sourceList' with key [19]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#19': Cannot resolve reference to bean 'customSessionFilter' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customSessionFilter' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionRegistry' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionRegistry' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionApi' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionApi' defined in class path resource [api-context.xml]: Cannot resolve reference to bean 'userSessionRepository' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:401)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:159)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.web.DefaultSecurityFilterChain#19': Cannot resolve reference to bean 'customSessionFilter' while setting constructor argument with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customSessionFilter' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionRegistry' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionRegistry' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionApi' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionApi' defined in class path resource [api-context.xml]: Cannot resolve reference to bean 'userSessionRepository' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:401)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:159)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customSessionFilter' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionRegistry' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionRegistry' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionApi' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionApi' defined in class path resource [api-context.xml]: Cannot resolve reference to bean 'userSessionRepository' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionRegistry' defined in class path resource [security-context.xml]: Cannot resolve reference to bean 'sessionApi' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionApi' defined in class path resource [api-context.xml]: Cannot resolve reference to bean 'userSessionRepository' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 65 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionApi' defined in class path resource [api-context.xml]: Cannot resolve reference to bean 'userSessionRepository' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1270)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 77 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userSessionRepository': Cannot create inner bean '(inner bean)#7c050ae8' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:327)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:131)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 89 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c050ae8': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:440)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:312)
+	... 99 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [repositories-context.xml]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 107 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:970)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:895)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1761)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1698)
+	... 114 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:111)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:97)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:329)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:312)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:892)
+	... 121 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:102)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:65)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:925)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:848)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:440)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:221)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:154)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:145)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+	... 133 common frames omitted
+Caused by: com.mysql.cj.core.exceptions.CJException: Access denied for user 'root'@'localhost' (using password: YES)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:93)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:133)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:117)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:787)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:712)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.checkErrorPacket(MysqlaProtocol.java:681)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:539)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:207)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1406)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:218)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:867)
+	... 146 common frames omitted
+2018-08-31_17:18:09.088 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 21244 (C:\Users\dell\Documents\workspace-sts-3.9.5.RELEASE\BeautySpringParlour\target\classes started by dell in C:\Users\dell\Documents\workspace-sts-3.9.5.RELEASE\BeautySpringParlour)
+2018-08-31_17:18:09.088 [restartedMain] DEBUG com.spring.DemoApplication -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:18:09.090 [restartedMain] INFO  com.spring.DemoApplication -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:18:16.977 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Initializing filter 'customSessionFilter'
+2018-08-31_17:18:16.978 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Filter 'customSessionFilter' configured successfully
+2018-08-31_17:18:17.810 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-08-31_17:18:17.811 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-08-31_17:18:18.390 [restartedMain] INFO  com.spring.DemoApplication -
+				Started DemoApplication in 9.745 seconds (JVM running for 10.286)
+2018-08-31_17:18:38.290 [http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase -
+				Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [224] milliseconds.
+2018-08-31_17:18:38.293 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-08-31_17:18:38.294 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.AnonymousAuthenticationToken@86c099e6: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2018-08-31_17:18:38.295 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				in /==>null
+2018-08-31_17:18:38.296 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-08-31_17:18:38.442 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-08-31_17:19:26.616 [main] INFO  com.spring.test.DemoApplicationTests -
+				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 17880 (started by dell in C:\Users\dell\Documents\workspace-sts-3.9.5.RELEASE\BeautySpringParlour)
+2018-08-31_17:19:26.616 [main] DEBUG com.spring.test.DemoApplicationTests -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:19:26.619 [main] INFO  com.spring.test.DemoApplicationTests -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:19:34.816 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-08-31_17:19:34.817 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-08-31_17:19:35.376 [main] INFO  com.spring.test.DemoApplicationTests -
+				Started DemoApplicationTests in 9.239 seconds (JVM running for 10.314)
+2018-08-31_17:26:20.512 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 10152 (E:\myProjects\beautyparlour\target\classes started by dell in E:\myProjects\beautyparlour)
+2018-08-31_17:26:20.672 [restartedMain] DEBUG com.spring.DemoApplication -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:26:20.674 [restartedMain] INFO  com.spring.DemoApplication -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:26:28.687 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Initializing filter 'customSessionFilter'
+2018-08-31_17:26:28.688 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Filter 'customSessionFilter' configured successfully
+2018-08-31_17:26:29.493 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-08-31_17:26:29.493 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-08-31_17:26:30.178 [restartedMain] ERROR o.a.catalina.core.StandardService -
+				Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:255)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.spring.DemoApplication.main(DemoApplication.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:433)
+	at java.base/sun.nio.ch.Net.bind(Net.java:425)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 19 common frames omitted
+2018-08-31_17:26:30.247 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+				
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-08-31_17:26:45.642 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 18268 (E:\myProjects\beautyparlour\target\classes started by dell in E:\myProjects\beautyparlour)
+2018-08-31_17:26:45.642 [restartedMain] DEBUG com.spring.DemoApplication -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:26:45.642 [restartedMain] INFO  com.spring.DemoApplication -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:26:51.266 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Initializing filter 'customSessionFilter'
+2018-08-31_17:26:51.266 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Filter 'customSessionFilter' configured successfully
+2018-08-31_17:26:51.948 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-08-31_17:26:51.949 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-08-31_17:26:52.348 [restartedMain] INFO  com.spring.DemoApplication -
+				Started DemoApplication in 7.161 seconds (JVM running for 7.685)
+2018-08-31_17:29:58.921 [http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase -
+				Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [147] milliseconds.
+2018-08-31_17:29:58.925 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-08-31_17:29:58.925 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.AnonymousAuthenticationToken@8568dab2: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2018-08-31_17:29:58.926 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				in /==>null
+2018-08-31_17:29:58.926 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-08-31_17:29:59.124 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-08-31_17:30:59.963 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 1336 (E:\myProjects\beautyparlour\target\classes started by dell in E:\myProjects\beautyparlour)
+2018-08-31_17:30:59.963 [restartedMain] DEBUG com.spring.DemoApplication -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:30:59.963 [restartedMain] INFO  com.spring.DemoApplication -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:31:06.078 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 13476 (E:\myProjects\beautyparlour\target\classes started by dell in E:\myProjects\beautyparlour)
+2018-08-31_17:31:06.078 [restartedMain] DEBUG com.spring.DemoApplication -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:31:06.078 [restartedMain] INFO  com.spring.DemoApplication -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:31:18.093 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Initializing filter 'customSessionFilter'
+2018-08-31_17:31:18.093 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Filter 'customSessionFilter' configured successfully
+2018-08-31_17:31:19.760 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-08-31_17:31:19.760 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-08-31_17:31:31.100 [restartedMain] INFO  com.spring.DemoApplication -
+				Started DemoApplication in 25.454 seconds (JVM running for 25.969)
+2018-08-31_17:31:44.752 [http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase -
+				Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [133] milliseconds.
+2018-08-31_17:31:44.754 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-08-31_17:31:44.754 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.AnonymousAuthenticationToken@e3fac285: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2018-08-31_17:31:44.755 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				in /==>null
+2018-08-31_17:31:44.755 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-08-31_17:31:48.743 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-08-31_17:39:53.719 [http-nio-8080-exec-4] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-08-31_17:44:04.177 [main] INFO  com.spring.test.DemoApplicationTests -
+				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 16400 (started by dell in E:\myProjects\beautyparlour)
+2018-08-31_17:44:04.177 [main] DEBUG com.spring.test.DemoApplicationTests -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-08-31_17:44:04.177 [main] INFO  com.spring.test.DemoApplicationTests -
+				No active profile set, falling back to default profiles: default
+2018-08-31_17:44:14.827 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-08-31_17:44:14.827 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-08-31_17:44:17.339 [main] INFO  com.spring.test.DemoApplicationTests -
+				Started DemoApplicationTests in 13.563 seconds (JVM running for 14.519)
