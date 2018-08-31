@@ -15,10 +15,12 @@
 <!-- 			value="com.mysql.jdbc.Driver" /> -->
 		<property name="driverClassName"
 			value="com.mysql.cj.jdbc.Driver" />
-		<property name="url"
-			value="jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12254476?autoReconnect=true&amp;useSSL=false" />
-		<property name="username" value="sql12254476" />
-		<property name="password" value="d9eMIw3tyE" />
+<!-- 		<property name="url" value="jdbc:mysql://sql12.freemysqlhosting.net:3306/sql12254476?autoReconnect=true&amp;useSSL=false" /> -->
+<!-- 		<property name="username" value="sql12254476" /> -->
+<!-- 		<property name="password" value="d9eMIw3tyE" /> -->
+		<property name="url" value="jdbc:mysql://localhost:3306/beautyparlour?autoReconnect=true&amp;useSSL=false" />
+		<property name="username" value="root" />
+		<property name="password" value="" />
 		<!-- <property name="useSSL" value="false" /> -->
 		<!-- <property name="autoReconnect" value="true" /> -->
 		<!-- <property name="driverClass" value="com.mysql.jdbc.Driver"/> -->

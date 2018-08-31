@@ -60,6 +60,7 @@ import com.spring.validation.LoginValidator;
 
 @Controller
 //@PropertySource("file:i18n/messages.properties")
+
 public class DemoController {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	private UserRepository userRepository;
@@ -344,7 +345,7 @@ public class DemoController {
 			// }
 			return "/beautyShalon/dashboard";
 		}
-		return "redirect:/main";
+		return "redirect:beauty/main";
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/main")
