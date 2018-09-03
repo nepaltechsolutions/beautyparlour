@@ -7,6 +7,9 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-/W3C/DTD HTML 4.01 Transitional/EN" "http://www.w3.org/TR/html4/loose.dtd">
+<c:set var="context" value="${pageContext.request.contextPath}" />
+<link href="${context}/shalon/css/styles.css" rel="stylesheet" type="text/css" />
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -17,13 +20,13 @@
 <meta name="author" content="">
 <title>SB Admin - Start Bootstrap Template</title>
 <!-- Bootstrap core CSS-->
-<link href="/shalon/vendor/bootstrap/css/bootstrap.min.css"
+<link href="${context}/shalon/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <!-- Custom fonts for this template-->
-<link href="/shalon/vendor/font-awesome/css/font-awesome.min.css"
+<link href="${context}/shalon/vendor/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 <!-- Custom styles for this template-->
-<link href="/shalon/css/sb-admin.css" rel="stylesheet">
+<link href="${context}/shalon/css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="bg-dark">
@@ -32,7 +35,7 @@
 			<div class="card-header">Login</div>
 			<div class="card-body">
 				<form:form id="login-form" modelAttribute="login"
-					action="/logmein" method='POST'>
+					action="${context}/logmein" method='POST'>
 <!-- 					<div class="col-sm-6 col-md-6"> -->
 <%-- 						<c:if test="${not empty errormessage}"> --%>
 <!-- 							<div class="newSpace"> -->
@@ -83,9 +86,9 @@
 		</div>
 	</div>
 	<!-- Bootstrap core JavaScript-->
-	<script src="/shalon/vendor/jquery/jquery.min.js"></script>
-	<script src="/shalon/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="${context}/shalon/vendor/jquery/jquery.min.js"></script>
+	<script src="${context}/shalon/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!-- Core plugin JavaScript-->
-	<script src="/shalon/vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="${context}/shalon/vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
 </html>

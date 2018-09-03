@@ -11,14 +11,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>TMPS00015</title>
-<link href="/shalon/css/styles.css" rel="stylesheet" type="text/css" />
+<c:set var="context" value="${pageContext.request.contextPath}" />
+<link href="${context}/shalon/css/styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <!----menu--->
-<link rel="stylesheet" href="/shalon/css/superfish.css" media="screen">
-<script src="/shalon/js/jquery-1.9.0.min.js"></script>
-<script src="/shalon/js/hoverIntent.js"></script>
-<script src="/shalon/js/superfish.js"></script>
+<link rel="stylesheet" href="${context}/shalon/css/superfish.css" media="screen">
+<script src="${context}/shalon/js/jquery-1.9.0.min.js"></script>
+<script src="${context}/shalon/js/hoverIntent.js"></script>
+<script src="${context}/shalon/js/superfish.js"></script>
 <script>
 
 		// initialise plugins
@@ -41,8 +42,8 @@
     </div>
     <div class="menu">
       <ul class="sf-menu" id="example">
-        <li><a href="/beautyShalon/index">Home</a></li>
-        <li class="current"> <a href="/beautyShalon/pages">Pages</a>
+        <li><a href="${context}/beautyShalon/index">Home</a></li>
+        <li class="current"> <a href="${context}/beautyShalon/pages">Pages</a>
           <ul>
             <li> <a href="#">consectetuer </a> </li>
             <li class="current"> <a href="#">Nunc dignissim risus id metus.</a>
@@ -67,8 +68,8 @@
                 <li><a href="#">commodo nulla</a></li>
               </ul>
         </li>
-        <li> <a href="/beautyShalon/contact">Contact</a> </li>
-      	<li> <a href="/login">Login</a> </li>
+        <li> <a href="${context}/beautyShalon/contact">Contact</a> </li>
+      	<li> <a href="${context}/login">Login</a> </li>
       	
       </ul>
     </div>
@@ -80,7 +81,7 @@
 <!---header-wrap--->
 <div class="wrap2">
 <div class="container">
-  <div class="banner"> <img src="/shalon/images/banner-img.jpg" alt="banner" />
+  <div class="banner"> <img src="${context}/shalon/images/banner-img.jpg" alt="banner" />
     <div class="banner-shadows"></div>
   </div>
 <div class="clearing"></div>
@@ -119,7 +120,7 @@
     <div class="title">
       <h1>Vivamus euismod lacus at mi eleifend volutpat.</h1>
     </div>
-    <div class="service mar-right40"> <img src="/shalon/images/image1.jpg" alt="image" />
+    <div class="service mar-right40"> <img src="${context}/shalon/images/image1.jpg" alt="image" />
       <div class="shadows"></div>
       <div class="title">
         <h2>Nam faucibus adipis</h2>
@@ -129,7 +130,7 @@
         <div class="button"><a href="#">More Info </a></div>
       </div>
     </div>
-    <div class="service mar-right40"> <img src="/shalon/images/image2.jpg" alt="image" />
+    <div class="service mar-right40"> <img src="${context}/shalon/images/image2.jpg" alt="image" />
       <div class="shadows"></div>
       <div class="title">
         <h2>Imperdiet risus luctu</h2>
@@ -139,7 +140,7 @@
         <div class="button"><a href="#">More Info </a></div>
       </div>
     </div>
-    <div class="service"> <img src="/shalon/images/image3.jpg" alt="image" />
+    <div class="service"> <img src="${context}/shalon/images/image3.jpg" alt="image" />
       <div class="shadows"></div>
       <div class="title">
         <h2>Eleifend eunisl auctor</h2>

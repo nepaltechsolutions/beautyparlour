@@ -8,6 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-/W3C/DTD HTML 4.01 Transitional/EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
+<c:set var="context" value="${pageContext.request.contextPath}" />
 
 <head>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -37,13 +38,13 @@ $(document).ready(function() {
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
-  <link href="/shalon/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="${context}/shalon/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="/shalon/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="${context}/shalon/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Page level plugin CSS-->
-  <link href="/shalon/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="${context}/shalon/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="/shalon/css/sb-admin.css" rel="stylesheet">
+  <link href="${context}/shalon/css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -332,17 +333,17 @@ $(document).ready(function() {
       </div>
     </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="/shalon/vendor/jquery/jquery.min.js"></script>
-    <script src="/shalon/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="${context}/shalon/vendor/jquery/jquery.min.js"></script>
+    <script src="${context}/shalon/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="/shalon/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="${context}${context}/shalon/vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
-    <script src="/shalon/vendor/datatables/jquery.dataTables.js"></script>
-    <script src="/shalon/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="${context}/shalon/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="${context}/shalon/vendor/datatables/dataTables.bootstrap4.js"></script>
     <!-- Custom scripts for all pages-->
-    <script src="/shalon/js/sb-admin.min.js"></script>
+    <script src="${context}/shalon/js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
-    <script src="/shalon/js/sb-admin-datatables.min.js"></script>
+    <script src="${context}/shalon/js/sb-admin-datatables.min.js"></script>
   </div>
 </body>
 

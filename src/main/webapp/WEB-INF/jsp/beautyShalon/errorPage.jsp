@@ -1,7 +1,10 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <html lang="en">
+<c:set var="context" value="${pageContext.request.contextPath}" />
 
 <head>
-<link rel="stylesheet" href="/shalon/css/errorPage.css" media="screen">
+<link rel="stylesheet" href="${context}/shalon/css/errorPage.css" media="screen">
   <meta charset="UTF-8" />
   <title>An Error Has Occured</title>
 </head>

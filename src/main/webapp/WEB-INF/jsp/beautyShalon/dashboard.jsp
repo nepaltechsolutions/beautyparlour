@@ -6,6 +6,8 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="context" value="${pageContext.request.contextPath}" />
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +18,11 @@
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
-  <link href="/shalon/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="${context}/shalon/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="/shalon/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="${context}/shalon/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
-  <link href="/shalon/css/sb-admin.css" rel="stylesheet">
+  <link href="${context}/shalon/css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -295,22 +297,22 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="/logout">Logout</a>
+            <a class="btn btn-primary" href="${context}/logout">Logout</a>
           </div>
         </div>
       </div>
     </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="/shalon/vendor/jquery/jquery.min.js"></script>
-    <script src="/shalon/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="${context}/shalon/vendor/jquery/jquery.min.js"></script>
+    <script src="${context}/shalon/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <script src="/shalon/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="${context}/shalon/vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
-    <script src="/shalon/vendor/chart.js/Chart.min.js"></script>
+    <script src="${context}/shalon/vendor/chart.js/Chart.min.js"></script>
     <!-- Custom scripts for all pages-->
-    <script src="/shalon/js/sb-admin.min.js"></script>
+    <script src="${context}/shalon/js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
-    <script src="/shalon/js/sb-admin-charts.min.js"></script>
+    <script src="${context}/shalon/js/sb-admin-charts.min.js"></script>
   </div>
 </body>
 

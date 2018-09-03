@@ -3,11 +3,13 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-/W3C/DTD HTML 4.01 Transitional/EN" "http://www.w3.org/TR/html4/loose.dtd">
+<c:set var="context" value="${pageContext.request.contextPath}" />
+
 <html>
 	<head>
 		<title>0hh Website Template | Home :: W3layouts</title>
 		<meta name="keywords" content="404 iphone web template, Android web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-		<link href="/shalon/css/404style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="${context}/shalon/css/404style.css" rel="stylesheet" type="text/css"  media="all" />
 	</head>
 	<body>
 		<!--start-wrap--->
@@ -21,9 +23,9 @@
 			<!---End-header---->
 			<!--start-content------>
 			<div class="content">
-				<img src="/shalon/images/404error-img.png" title="error" />
+				<img src="${context}/shalon/images/404error-img.png" title="error" />
 				<p><span><label>O</label>hh.....</span>You Requested the page that is no longer There.</p>
-				<a href="/">Back To Home</a>
+				<a href="${context}/">Back To Home</a>
 				<div class="copy-right">
 					<p>&copy; 2018 Ohh. All Rights Reserved | Design by <a href="">abTech</a></p>
 				</div>

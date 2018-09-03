@@ -345,7 +345,7 @@ public class DemoController {
 			// }
 			return "/beautyShalon/dashboard";
 		}
-		return "redirect:beauty/main";
+		return "redirect:/main";
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/main")

@@ -1,80 +1,206 @@
-2018-08-31_18:14:36.304 [restartedMain] INFO  com.spring.DemoApplication -
-				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 11252 (E:\myProjects\beautyparlour\target\classes started by dell in E:\myProjects\beautyparlour)
-2018-08-31_18:14:36.304 [restartedMain] DEBUG com.spring.DemoApplication -
+2018-09-03_11:13:22.801 [main] INFO  com.spring.test.DemoApplicationTests -
+				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 11820 (started by dell in E:\myProjects\beautyparlour)
+2018-09-03_11:13:22.804 [main] DEBUG com.spring.test.DemoApplicationTests -
 				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
-2018-08-31_18:14:36.306 [restartedMain] INFO  com.spring.DemoApplication -
+2018-09-03_11:13:22.807 [main] INFO  com.spring.test.DemoApplicationTests -
 				No active profile set, falling back to default profiles: default
-2018-08-31_18:14:43.101 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+2018-09-03_11:13:31.015 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-09-03_11:13:31.015 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-09-03_11:13:31.675 [main] INFO  com.spring.test.DemoApplicationTests -
+				Started DemoApplicationTests in 9.368 seconds (JVM running for 10.352)
+2018-09-03_11:15:04.951 [main] INFO  com.spring.test.DemoApplicationTests -
+				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 12000 (started by dell in E:\myProjects\beautyparlour)
+2018-09-03_11:15:04.953 [main] DEBUG com.spring.test.DemoApplicationTests -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-09-03_11:15:04.956 [main] INFO  com.spring.test.DemoApplicationTests -
+				No active profile set, falling back to default profiles: default
+2018-09-03_11:15:13.486 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-09-03_11:15:13.486 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-09-03_11:15:14.197 [main] INFO  com.spring.test.DemoApplicationTests -
+				Started DemoApplicationTests in 9.866 seconds (JVM running for 11.366)
+2018-09-03_11:18:15.484 [main] INFO  com.spring.test.DemoApplicationTests -
+				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 12152 (started by dell in E:\myProjects\beautyparlour)
+2018-09-03_11:18:15.485 [main] DEBUG com.spring.test.DemoApplicationTests -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-09-03_11:18:15.487 [main] INFO  com.spring.test.DemoApplicationTests -
+				No active profile set, falling back to default profiles: default
+2018-09-03_11:18:22.084 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
+2018-09-03_11:18:22.084 [main] DEBUG com.spring.startup.FirstAdminCreator -
+				tz.getId()==>Asia/Kathmandu
+2018-09-03_11:18:22.934 [main] INFO  com.spring.test.DemoApplicationTests -
+				Started DemoApplicationTests in 7.855 seconds (JVM running for 9.034)
+2018-09-03_11:22:53.464 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 17612 (E:\myProjects\beautyparlour\target\classes started by dell in E:\myProjects\beautyparlour)
+2018-09-03_11:22:53.464 [restartedMain] DEBUG com.spring.DemoApplication -
+				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-09-03_11:22:53.466 [restartedMain] INFO  com.spring.DemoApplication -
+				No active profile set, falling back to default profiles: default
+2018-09-03_11:22:59.976 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
 				Initializing filter 'customSessionFilter'
-2018-08-31_18:14:43.101 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+2018-09-03_11:22:59.977 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
 				Filter 'customSessionFilter' configured successfully
-2018-08-31_18:14:43.778 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+2018-09-03_11:23:00.942 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
 				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
-2018-08-31_18:14:43.778 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
+2018-09-03_11:23:00.942 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
 				tz.getId()==>Asia/Kathmandu
-2018-08-31_18:14:44.242 [restartedMain] INFO  com.spring.DemoApplication -
-				Started DemoApplication in 8.377 seconds (JVM running for 8.913)
-2018-08-31_18:14:50.745 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+2018-09-03_11:23:01.632 [restartedMain] INFO  com.spring.DemoApplication -
+				Started DemoApplication in 8.606 seconds (JVM running for 9.274)
+2018-09-03_11:23:04.593 [http-nio-8080-exec-2] WARN  o.a.c.util.SessionIdGeneratorBase -
+				Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [232] milliseconds.
+2018-09-03_11:23:04.598 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-09-03_11:23:04.598 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.AnonymousAuthenticationToken@715583cb: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2018-09-03_11:23:04.598 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				in /==>null
+2018-09-03_11:23:04.598 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
 				AuthenticationUtil.getCurrentUser()==>null
-2018-08-31_18:14:51.772 [http-nio-8080-exec-1] WARN  o.a.c.util.SessionIdGeneratorBase -
-				Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [150] milliseconds.
-2018-08-31_18:16:22.619 [main] INFO  com.spring.test.DemoApplicationTests -
-				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 15852 (started by dell in E:\myProjects\beautyparlour)
-2018-08-31_18:16:22.619 [main] DEBUG com.spring.test.DemoApplicationTests -
+2018-09-03_11:23:04.664 [http-nio-8080-exec-4] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:26:38.856 [http-nio-8080-exec-5] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:26:40.690 [http-nio-8080-exec-9] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:26:44.326 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:26:46.142 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:27:16.368 [http-nio-8080-exec-10] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-09-03_11:27:16.368 [http-nio-8080-exec-10] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.AnonymousAuthenticationToken@7c905a43: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@ffff4c9c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 816AC02D4407FE30E32BF383E3A7EB55; Granted Authorities: ROLE_ANONYMOUS
+2018-09-03_11:27:16.368 [http-nio-8080-exec-10] DEBUG com.spring.controller.DemoController -
+				in /==>null
+2018-09-03_11:27:16.368 [http-nio-8080-exec-10] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:27:16.397 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:28:57.328 [http-nio-8080-exec-8] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:38:47.767 [restartedMain] INFO  com.spring.DemoApplication -
+				Starting DemoApplication on DESKTOP-0K7BKM9 with PID 12308 (E:\myProjects\beautyparlour\target\classes started by dell in E:\myProjects\beautyparlour)
+2018-09-03_11:38:47.767 [restartedMain] DEBUG com.spring.DemoApplication -
 				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
-2018-08-31_18:16:22.621 [main] INFO  com.spring.test.DemoApplicationTests -
+2018-09-03_11:38:47.769 [restartedMain] INFO  com.spring.DemoApplication -
 				No active profile set, falling back to default profiles: default
-2018-08-31_18:16:30.482 [main] DEBUG com.spring.startup.FirstAdminCreator -
+2018-09-03_11:38:53.623 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Initializing filter 'customSessionFilter'
+2018-09-03_11:38:53.624 [localhost-startStop-1] DEBUG c.spring.session.CustomSessionFilter -
+				Filter 'customSessionFilter' configured successfully
+2018-09-03_11:38:54.414 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
 				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
-2018-08-31_18:16:30.482 [main] DEBUG com.spring.startup.FirstAdminCreator -
+2018-09-03_11:38:54.414 [restartedMain] DEBUG com.spring.startup.FirstAdminCreator -
 				tz.getId()==>Asia/Kathmandu
-2018-08-31_18:16:31.249 [main] INFO  com.spring.test.DemoApplicationTests -
-				Started DemoApplicationTests in 8.981 seconds (JVM running for 10.035)
-2018-08-31_18:22:17.258 [main] INFO  com.spring.test.DemoApplicationTests -
-				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 22492 (started by dell in E:\myProjects\beautyparlour)
-2018-08-31_18:22:17.258 [main] DEBUG com.spring.test.DemoApplicationTests -
+2018-09-03_11:38:54.903 [restartedMain] INFO  com.spring.DemoApplication -
+				Started DemoApplication in 7.561 seconds (JVM running for 8.142)
+2018-09-03_11:39:12.533 [http-nio-8080-exec-4] WARN  o.a.c.util.SessionIdGeneratorBase -
+				Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [190] milliseconds.
+2018-09-03_11:39:12.534 [http-nio-8080-exec-4] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-09-03_11:39:12.534 [http-nio-8080-exec-4] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.AnonymousAuthenticationToken@17f6df5e: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2018-09-03_11:39:12.535 [http-nio-8080-exec-4] DEBUG com.spring.controller.DemoController -
+				in /==>null
+2018-09-03_11:39:12.535 [http-nio-8080-exec-4] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:39:12.581 [http-nio-8080-exec-6] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:40:46.972 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				in contactme=====>
+2018-09-03_11:40:47.023 [http-nio-8080-exec-1] DEBUG c.spring.validation.ContactValidator -
+				p.matcher(model.getFullName()).matches()true
+2018-09-03_11:40:47.033 [http-nio-8080-exec-1] DEBUG c.spring.validation.ContactValidator -
+				RegexUtil.isValidEmailAddress(model.getEmail())==>false
+2018-09-03_11:40:47.035 [http-nio-8080-exec-1] DEBUG com.spring.controller.DemoController -
+				e=====>[com.spring.exception.ValidationError@60a9518]
+2018-09-03_11:40:59.133 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				in contactme=====>
+2018-09-03_11:40:59.133 [http-nio-8080-exec-2] DEBUG c.spring.validation.ContactValidator -
+				p.matcher(model.getFullName()).matches()true
+2018-09-03_11:40:59.133 [http-nio-8080-exec-2] DEBUG c.spring.validation.ContactValidator -
+				RegexUtil.isValidEmailAddress(model.getEmail())==>false
+2018-09-03_11:40:59.133 [http-nio-8080-exec-2] DEBUG com.spring.controller.DemoController -
+				e=====>[com.spring.exception.ValidationError@69fd094d]
+2018-09-03_11:41:09.080 [http-nio-8080-exec-3] DEBUG com.spring.controller.DemoController -
+				in contactme=====>
+2018-09-03_11:41:09.080 [http-nio-8080-exec-3] DEBUG c.spring.validation.ContactValidator -
+				p.matcher(model.getFullName()).matches()true
+2018-09-03_11:41:09.080 [http-nio-8080-exec-3] DEBUG c.spring.validation.ContactValidator -
+				RegexUtil.isValidEmailAddress(model.getEmail())==>false
+2018-09-03_11:41:09.081 [http-nio-8080-exec-3] DEBUG com.spring.controller.DemoController -
+				e=====>[com.spring.exception.ValidationError@1dee7bb]
+2018-09-03_11:41:27.538 [http-nio-8080-exec-6] DEBUG com.spring.controller.DemoController -
+				in contactme=====>
+2018-09-03_11:41:27.538 [http-nio-8080-exec-6] DEBUG c.spring.validation.ContactValidator -
+				p.matcher(model.getFullName()).matches()true
+2018-09-03_11:41:27.538 [http-nio-8080-exec-6] DEBUG c.spring.validation.ContactValidator -
+				RegexUtil.isValidEmailAddress(model.getEmail())==>true
+2018-09-03_11:41:28.029 [http-nio-8080-exec-6] DEBUG com.spring.controller.DemoController -
+				statusMessage=====>Messages Submitted Sucessfully
+2018-09-03_11:42:36.117 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				in ========================>onAuthentication sessiologin
+2018-09-03_11:42:36.118 [http-nio-8080-exec-1] DEBUG c.s.s.PersistingSessionRegistry -
+				includeExpiredSessions==>false
+2018-09-03_11:42:36.118 [http-nio-8080-exec-1] DEBUG c.s.s.PersistingSessionRegistry -
+				principal==>user5
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.s.PersistingSessionRegistry -
+				sessions==>[]
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				authentication==>org.springframework.security.authentication.UsernamePasswordAuthenticationToken@c698f700: Principal: user5; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMINISTRATOR, ROLE_AUTHENTICATED
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				user logged in from: 0:0:0:0:0:0:0:1
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				request.getRemoteAddr()=>0:0:0:0:0:0:0:1
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				request.getSession(false)=>org.apache.catalina.session.StandardSessionFacade@656a016b
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				request.getSession(false).getId()=>03AF4BA0F941B9CF6E6629F4CA632387
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				request.getSession(false).getId()=>03AF4BA0F941B9CF6E6629F4CA632387
+2018-09-03_11:42:36.121 [http-nio-8080-exec-1] DEBUG c.s.session.SessionLoggingStrategy -
+				request.getRemoteAddr()=>0:0:0:0:0:0:0:1
+2018-09-03_11:42:36.127 [http-nio-8080-exec-1] DEBUG com.spring.api.impl.SessionLogApi -
+				Logging user Logged in:5
+2018-09-03_11:42:36.390 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-09-03_11:42:36.391 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.UsernamePasswordAuthenticationToken@c698f700: Principal: user5; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMINISTRATOR, ROLE_AUTHENTICATED
+2018-09-03_11:42:36.391 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				in /==>com.spring.entity.User@3ee75e0d
+2018-09-03_11:42:36.391 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>com.spring.entity.User@3ee75e0d
+2018-09-03_11:43:26.953 [http-nio-8080-exec-5] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-09-03_11:43:26.953 [http-nio-8080-exec-5] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.UsernamePasswordAuthenticationToken@c698f700: Principal: user5; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_ADMINISTRATOR, ROLE_AUTHENTICATED
+2018-09-03_11:43:26.953 [http-nio-8080-exec-5] DEBUG com.spring.controller.DemoController -
+				in /==>com.spring.entity.User@3ee75e0d
+2018-09-03_11:43:26.953 [http-nio-8080-exec-5] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>com.spring.entity.User@3ee75e0d
+2018-09-03_11:43:29.942 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				Sthis is my first log==>
+2018-09-03_11:43:29.942 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				SecurityContextHolder==>org.springframework.security.authentication.AnonymousAuthenticationToken@17f6df5e: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2018-09-03_11:43:29.942 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				in /==>null
+2018-09-03_11:43:29.943 [http-nio-8080-exec-7] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:43:29.977 [http-nio-8080-exec-3] DEBUG com.spring.controller.DemoController -
+				AuthenticationUtil.getCurrentUser()==>null
+2018-09-03_11:43:49.170 [main] INFO  com.spring.test.DemoApplicationTests -
+				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 12908 (started by dell in E:\myProjects\beautyparlour)
+2018-09-03_11:43:49.171 [main] DEBUG com.spring.test.DemoApplicationTests -
 				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
-2018-08-31_18:22:17.260 [main] INFO  com.spring.test.DemoApplicationTests -
+2018-09-03_11:43:49.173 [main] INFO  com.spring.test.DemoApplicationTests -
 				No active profile set, falling back to default profiles: default
-2018-08-31_18:22:25.592 [main] DEBUG com.spring.startup.FirstAdminCreator -
+2018-09-03_11:43:55.072 [main] DEBUG com.spring.startup.FirstAdminCreator -
 				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
-2018-08-31_18:22:25.593 [main] DEBUG com.spring.startup.FirstAdminCreator -
+2018-09-03_11:43:55.087 [main] DEBUG com.spring.startup.FirstAdminCreator -
 				tz.getId()==>Asia/Kathmandu
-2018-08-31_18:22:26.110 [main] INFO  com.spring.test.DemoApplicationTests -
-				Started DemoApplicationTests in 9.248 seconds (JVM running for 10.063)
-2018-08-31_18:31:25.272 [main] INFO  com.spring.test.DemoApplicationTests -
-				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 10496 (started by dell in E:\myProjects\beautyparlour)
-2018-08-31_18:31:25.273 [main] DEBUG com.spring.test.DemoApplicationTests -
-				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
-2018-08-31_18:31:25.275 [main] INFO  com.spring.test.DemoApplicationTests -
-				No active profile set, falling back to default profiles: default
-2018-08-31_18:31:31.092 [main] DEBUG com.spring.startup.FirstAdminCreator -
-				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
-2018-08-31_18:31:31.092 [main] DEBUG com.spring.startup.FirstAdminCreator -
-				tz.getId()==>Asia/Kathmandu
-2018-08-31_18:31:31.682 [main] INFO  com.spring.test.DemoApplicationTests -
-				Started DemoApplicationTests in 7.877 seconds (JVM running for 8.699)
-2018-08-31_18:56:41.301 [main] INFO  com.spring.test.DemoApplicationTests -
-				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 14296 (started by dell in E:\myProjects\beautyparlour)
-2018-08-31_18:56:41.301 [main] DEBUG com.spring.test.DemoApplicationTests -
-				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
-2018-08-31_18:56:41.301 [main] INFO  com.spring.test.DemoApplicationTests -
-				No active profile set, falling back to default profiles: default
-2018-08-31_18:56:50.121 [main] DEBUG com.spring.startup.FirstAdminCreator -
-				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
-2018-08-31_18:56:50.121 [main] DEBUG com.spring.startup.FirstAdminCreator -
-				tz.getId()==>Asia/Kathmandu
-2018-08-31_18:56:50.621 [main] INFO  com.spring.test.DemoApplicationTests -
-				Started DemoApplicationTests in 9.679 seconds (JVM running for 10.426)
-2018-08-31_19:05:55.692 [main] INFO  com.spring.test.DemoApplicationTests -
-				Starting DemoApplicationTests on DESKTOP-0K7BKM9 with PID 17320 (started by dell in E:\myProjects\beautyparlour)
-2018-08-31_19:05:56.245 [main] DEBUG com.spring.test.DemoApplicationTests -
-				Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
-2018-08-31_19:05:56.247 [main] INFO  com.spring.test.DemoApplicationTests -
-				No active profile set, falling back to default profiles: default
-2018-08-31_19:06:09.024 [main] DEBUG com.spring.startup.FirstAdminCreator -
-				tz==>sun.util.calendar.ZoneInfo[id="Asia/Kathmandu",offset=20700000,dstSavings=0,useDaylight=false,transitions=4,lastRule=null]
-2018-08-31_19:06:09.025 [main] DEBUG com.spring.startup.FirstAdminCreator -
-				tz.getId()==>Asia/Kathmandu
-2018-08-31_19:06:09.984 [main] INFO  com.spring.test.DemoApplicationTests -
-				Started DemoApplicationTests in 14.883 seconds (JVM running for 16.627)
+2018-09-03_11:43:55.988 [main] INFO  com.spring.test.DemoApplicationTests -
+				Started DemoApplicationTests in 7.188 seconds (JVM running for 8.148)
